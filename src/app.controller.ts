@@ -12,27 +12,27 @@ export class AppController {
   // POST	/user/logout	выход из системы
 
   @Get('login')
-  login(): string {
-    return this.appService.getHello();
+  loginG(): string {
+    return this.appService.getLogin();
   }
 
   @Get('profile')
-  profile(): string {
-    return this.appService.getHello();
+  profileG(): string {
+    return this.appService.getProfile();
   }
 
   @Post('login')
   loginP(@Body() body): any {
-    return this.appService.login(body);
+    return this.appService.postLogin(body);
   }
 
   @Post('signup')
   signupP(@Body() body): any {
-    return this.appService.login(body);
+    return this.appService.postSignup(body);
   }
 
   @Post('logout')
   logoutP(@Body() body): any {
-    return this.appService.login(body);
+    return this.appService.postLogout(body);
   }
 }
