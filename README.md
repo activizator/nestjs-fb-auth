@@ -1,1 +1,1 @@
-# nestjs-fb-auth
+# Firebase auth example on Nest.js
